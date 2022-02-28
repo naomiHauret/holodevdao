@@ -1,11 +1,10 @@
 import { createSignal } from 'solid-js'
 import { useSearchParams } from 'solid-app-router'
-import { useUserPreferences } from '@contexts/UserPreferences'
 import DeveloperDaoNftLookup from '@components/_dapps/DeveloperDaoNftLookup'
 import useNftLookupDapp from '@components/_dapps/DeveloperDaoNftLookup/useNftLookupDapp'
 import Input from '@components/Input'
 import { ButtonCta } from '@components/Button'
-import { ListScale } from '@components/Input/types'
+import { ListScale, ListVariant } from '@components/Input/types'
 import styles from './index.module.css'
 
 export default function Home() {
@@ -70,11 +69,13 @@ export default function Home() {
               disabled={nftStore.nftData.loading === true || nftStore.owner.loading === true ? true : false}
             />
           </label>
-          {/* @ts-expect-error */}
           <ButtonCta
+            /* @ts-expect-error */
             isLoading={nftStore.nftData.loading === true || nftStore.owner.loading === true ? true : false}
-            scale="sm"
-            variant="primary-solid"
+            /* @ts-expect-error */
+            scale={ListScale.sm}
+            /* @ts-expect-error */
+            variant={ListVariant['primary-solid']}
             css="focus-within:z-10 rounded-is-none flex-shrink-0 w-content"
             type="submit"
           >
@@ -84,8 +85,8 @@ export default function Home() {
             <span
               class="pis-2"
               classList={{
-                /* @ts-expect-error */
                 'animate-flipendo motion-reduced:animate-none':
+                  /* @ts-expect-error */
                   nftStore.nftData.loading === true || nftStore.owner.loading === true,
               }}
               aria-hidden="true"

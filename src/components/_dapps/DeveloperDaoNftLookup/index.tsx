@@ -170,7 +170,7 @@ const DeveloperDaoNftLookup = (props: IDeveloperDaoNftLookupProps) => {
             variant={ButtonVariant['secondary-outline']}
             rel="nofollow noreferrer"
             target="_blank"
-            href={`https://twitter.com/intent/tweet?url=Gm%20%40developer_dao%20from%20Dev%23${props.devId}%20%F0%9F%8C%88%20Ready%20to%20learn%20and%20build%20%23web3%20%F0%9F%A4%9D%20%0ACheck%20your%20%E2%9C%A8Holographic%E2%9C%A8%20Dev%20here%20%F0%9F%91%80%E2%9E%A1%EF%B8%8F%20https%3A%2F%2Fholodevdao.xyz%2F%3Fid%3D${props.devId}%0A%23probablynothing%20%23holographicdev%F0%9F%8C%88%20%23devdao%0A`}
+            href={`https://twitter.com/intent/tweet?url=Gm%20%40developer_dao%20from%20Dev%23${props.devId}%20%F0%9F%8C%88%20Ready%20to%20learn%20and%20build%20%23web3%20%F0%9F%A4%9D%20%0ACheck%20my%20%E2%9C%A8holographic%E2%9C%A8%20Dev%20here%20%F0%9F%91%80%E2%9E%A1%EF%B8%8F%20https%3A%2F%2Fholodevdao.xyz%2F%3Fid%3D${props.devId}%0A%23probablynothing%20%23holographicdev%F0%9F%8C%88%20%23devdao%0A`}
           >
             <IconTwitter width="1em" class="mie-2 text-md" /> Share on Twitter
           </ButtonLink>
