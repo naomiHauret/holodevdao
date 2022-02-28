@@ -13,15 +13,21 @@ const App: Component = () => {
       <main class="flex-grow flex flex-col py-8">
         <Route />
       </main>
-      <footer class="py-3 mt-auto text-yellow-800 w-full justify-center items-center flex flex-col space-y-3 font-mono text-ss">
+      <footer class="text-center p-3 mt-auto text-yellow-800 w-full justify-center items-center flex flex-col space-y-3 font-mono text-ss">
         <span>
           Crafted by{' '}
           <a class={footerLinksStyles} href="https://twitter.com/naomihauret" target="_blank" rel="nofollow noreferrer">
             Naomi Hauret
           </a>{' '}
           with{' '}
-          <a class={footerLinksStyles} href="https://www.solidjs.com/" target="_blank" rel="nofollow noreferrer">
+          <a class={footerLinksStyles} href="https://solidjs.com/" target="_blank" rel="nofollow noreferrer">
             SolidJS
+          </a>
+        </span>
+        <span>
+          Hosted with{' '}
+          <a class={footerLinksStyles} href="https://fleek.co/" target="_blank" rel="nofollow noreferrer">
+            Fleek.co ⚡
           </a>
         </span>
         <div>
