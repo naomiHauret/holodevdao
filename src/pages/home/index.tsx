@@ -39,8 +39,7 @@ export default function Home() {
         </div>
       </h1>
       <p class="px-2 font-mono text-sm text-center max-w-prose">
-        A community of of developers, designers, writers, students, mentors... learning and working together on building
-        making the web of tomorrow.
+        A community of of developers, designers, writers, students, mentors... learning and working together to build the web of tomorrow.
       </p>
       <p class="px-2 max-w-prose mt-6 mb-2 text-center font-600">
         Checkout any Dev NFT by entering its ID (a number) below.
