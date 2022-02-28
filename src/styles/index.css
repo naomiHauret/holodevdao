@@ -1,0 +1,99 @@
+/*
+  font-face rules (custom fonts declarations)
+*/
+@font-face {
+  src: url('/Poppins-Medium.woff2') format('woff2');
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+}
+
+@font-face {
+  src: url('/Poppins-SemiBold.woff2') format('woff2');
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+}
+
+@font-face {
+  src: url('/Poppins-Bold.woff2') format('woff2');
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  src: url('/Poppins-ExtraBold.woff2') format('woff2');
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: block;
+}
+
+@font-face {
+  src: url('/Poppins-ExtraBoldItalic.woff2') format('woff2');
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 900;
+  font-display: block;
+}
+
+@font-face {
+  src: url('/Poppins-Black.woff2') format('woff2');
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+}
+
+@font-face {
+  src: url('/FiraMono-Regular.woff2') format('woff2');
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  src: url('/LibreBarcode128-Regular.woff2') format('woff2');
+  font-family: 'Barcode';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+/*
+  Tailwind setup
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Base styles
+*/
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply box-border;
+  }
+
+  html {
+    text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+    font-feature-settings: 'tnum';
+    font-variant-numeric: tabular-nums;
+  }
+
+  input {
+    @apply font-mono;
+  }
+
+  button {
+    font-family: inherit;
+  }
+}

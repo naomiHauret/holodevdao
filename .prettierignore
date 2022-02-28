@@ -1,0 +1,13 @@
+node_modules
+# possible build outputs, may be removed if not needed
+dist
+build
+
+# good to have just in case
+coverage
+.next
+package-lock.json
+package.json
+yarn-lock.json
+cache
+artifacts

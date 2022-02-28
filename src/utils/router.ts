@@ -1,0 +1,7 @@
+export const LINK_ETHERSCAN_MINTING_CONTRACT = 'https://etherscan.io/address/0x25ed58c027921E14D86380eA2646E3a1B5C55A8b'
+export const LINK_OPENSEA_COLLECTION = 'https://opensea.io/collection/devs-for-revolution'
+export const LINK_DISCORD = 'https://discord.gg/devdao'
+export const LINK_TWITTER = 'https://twitter.com/developer_dao'
+export const LINK_GITHUB = 'https://github.com/Developer-DAO'
+export const LINK_DISCOURSE = 'https://forum.developerdao.com/'
+export const LINK_SPONSORSHIP_VERCEL = 'https://vercel.com/?utm_source=developerdao&utm_campaign=oss'

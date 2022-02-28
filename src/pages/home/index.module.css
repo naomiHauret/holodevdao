@@ -1,0 +1,36 @@
+.labelDeveloper {
+  text-shadow: 0.125rem 0.125rem 0 fuchsia, 0.375rem 0.3125rem 0 yellow;
+  transform: rotate(-5deg);
+}
+
+.labelDao {
+  text-shadow: 0.125rem 0.125rem 0 fuchsia, 0.375rem 0.3125rem 0 yellow;
+  transform: rotate(-2deg);
+}
+
+.labelHolographic {
+  transform: rotate(-2deg);
+  background-image: linear-gradient(
+    49.82deg,
+    #f1f1f1 -7.92%,
+    #dbf7ac -1.63%,
+    #f151ff 6.97%,
+    #de46a1 12.93%,
+    #95b3ff 21.54%,
+    #ddf483 25.91%,
+    #6bffe4 31.84%,
+    #e3b7f8 38.12%,
+    #91ffd7 43.68%,
+    #acfffa 46.2%,
+    #a6f4e2 49.88%,
+    #c2f555 53.35%,
+    #00ffff 60.04%,
+    #e354d7 65.58%,
+    #9bdbff 78.29%,
+    #85ffc4 90.61%,
+    #faeaf9 95.17%
+  );
+  background-clip: text;
+  text-shadow: 1px 1px 0px black;
+  -webkit-text-fill-color: transparent;
+}

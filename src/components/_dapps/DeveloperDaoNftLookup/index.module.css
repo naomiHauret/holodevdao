@@ -1,0 +1,105 @@
+.flipContext {
+  perspective: 600px;
+}
+
+.flipWrapper {
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 350ms;
+}
+
+.flipWrapper.flipped {
+  transform: translateX(-100%) rotateY(180deg);
+}
+
+/*
+  Flippable ticket face
+*/
+
+.ticket {
+  --notchSize: 0.875rem;
+  clip-path: polygon(
+    0% 0,
+    0 0%,
+    100% 0%,
+    100% var(--notchSize),
+    100% calc(100% - var(--notchSize)),
+    calc(100% - var(--notchSize)) 100%,
+    var(--notchSize) 100%,
+    0% calc(100% - var(--notchSize))
+  );
+}
+
+.ticket::before {
+  @apply absolute inset-0 w-full h-full;
+  content: ' ';
+  background: radial-gradient(
+    97.78% 75.23% at 17.1% 76.08%,
+    #f8fffe 0%,
+    #cad2d0 21.35%,
+    #cfcfcf 43.23%,
+    #dbdada 64.58%,
+    rgba(255, 255, 255, 0.94) 77.6%,
+    #a4a4a4 100%
+  );
+}
+
+.ticket::after {
+  @apply absolute inset-0 w-full h-full;
+  content: ' ';
+  z-index: 1;
+  background-position-y: 50%;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(106.89deg, #00ba4a 8.42%, #fff8e1 100%),
+    linear-gradient(219.46deg, #1d0071 27.63%, #f289e1 100%), linear-gradient(238.72deg, #21e800 0%, #ffecbb 100%),
+    radial-gradient(100% 172.21% at 100% 50%, #ffffff 0%, #000353 100%),
+    radial-gradient(62.36% 100% at 50% 0%, #0057ff 0%, #000000 100%), linear-gradient(180deg, #b7c6a4 0%, #ffe600 100%),
+    linear-gradient(150.76deg, #360f2d 15.35%, #000b72 89.57%);
+  background-blend-mode: multiply, screen, overlay, color-dodge, difference, overlay, normal;
+  mix-blend-mode: hard-light;
+}
+
+.ticket.backFace::after,
+.ticket.frontFace::after {
+  background-position-x: var(--holographicPositionX);
+}
+
+.ticket.backFace {
+  transform: rotateY(-180deg);
+}
+
+.flipWrapper.flipped .ticket.backFace {
+  z-index: 20;
+}
+
+.flipWrapper:not(.flipped) .ticket.frontFace {
+  z-index: 20;
+}
+
+.ticket.backFace::after {
+  filter: brightness(1.5) contrast(0.75) saturate(0.9);
+}
+
+.ticket.frontFace::after {
+  filter: brightness(1.25) contrast(0.5) saturate(0.79);
+}
+
+/*
+  Puncholes
+*/
+.punchHoles::after,
+.punchHoles::before {
+  @apply transform border-solid border-ss border-neutral-900 border-opacity-10 translate-y-1/2 absolute bg-yellow-100 w-9 h-9 rounded-full bottom-0;
+  content: ' ';
+}
+
+.punchHoles::before {
+  @apply -translate-x-1/2;
+  left: 0;
+}
+
+.punchHoles::after {
+  @apply translate-x-1/2;
+  right: 0;
+}
