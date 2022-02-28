@@ -1,33 +1,38 @@
-## Usage
+# Holo DevDAO
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+An alternative viewer for DevDAO NFT with a ✨holographic✨ twist.
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
-
-```bash
-$ npm install # or pnpm install or yarn install
+## Pre-requisites
+* `node` version >= 15.0.1 & `npm` >= 7.20.6. If you have `nvm` installed, run `nvm use` to use the same `node` and `npm` version used when this project was crafter ;
+* An [Alchemy](https://www.alchemy.com/) account & project
+* An [Infura](https://infura.io) account & project
+## Setup
+1. Install the dependencies and setup Git hooks (via Husky) by running `npm run setup` in your terminal
+2. Copy the content of `.env.dist` and paste it in `.env.local`. Here are some values :
 ```
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+VITE_DEVELOPER_DAO_CONTRACT=0x25ed58c027921E14D86380eA2646E3a1B5C55A8b
+VITE_DEVELOPER_DAO_CONTRACT_NETWORK=mainnet
+VITE_DEVELOPER_DAO_CONTRACT_NETWORK_PROVIDER=mainnet
+VITE_NETWORK_ID=1
+VITE_OPENSEA_DIRECT_LINK_PREFIX=https://opensea.io/assets/0x25ed58c027921E14D86380eA2646E3a1B5C55A8b
+VITE_OPENSEA_COLLECTION_LINK=https://opensea.io/collection/devs-for-revolution
+VITE_ETHER_SCAN_LINK_PREFIX=https://etherscan.io/address
+VITE_ETHERSCAN_TX_URL=https://etherscan.io/tx/
+VITE_ALCHEMY_URL=
+VITE_INFURA_PROJECT_ID=
+VITE_INFURA_PROJECT_SECRET=
+```
 
-## Available Scripts
+You will need to provide values for `VITE_ALCHEMY_URL`, `VITE_INFURA_PROJECT_ID` and `VITE_INFURA_PROJECT_SECRET`
 
-In the project directory, you can run:
+3. Run `npm start`
+4. Hit `localhost:3000`
 
-### `npm dev` or `npm start`
+## Built with
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+* [SolidJS](https://solidjs.com/)
+* [TailwindCSS](https://tailwindcss.com/)
+* [vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
+* [ethers.js](https://docs.ethers.io/v5/)
+* [Infura](https://infura.io)
+* [Alchemy](https://alchemy.com/)

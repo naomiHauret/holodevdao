@@ -1,7 +1,6 @@
 {
-  "name": "holo-devdao",
-  "version": "0.0.0",
-  "description": "",
+  "name": "holodevdao",
+  "description": "An alternative viewer for DevDAO NFT with a ✨holographic✨ twist.",
   "scripts": {
     "setup": "npm install && husky install",
     "start": "vite --host",
@@ -14,6 +13,7 @@
     "json:prettify": "prettier --write \"./**/*.json\"",
     "format": "npm run js:prettify && npm run css:prettify && npm run json:prettify"
   },
+  "author": "Naomi Hauret",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
