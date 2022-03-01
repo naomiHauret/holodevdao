@@ -3,7 +3,7 @@
 An alternative viewer for DevDAO NFT with a ✨holographic✨ twist.
 
 ## Pre-requisites
-* `node` version >= 15.0.1 & `npm` >= 7.20.6. If you have `nvm` installed, run `nvm use` to use the same `node` and `npm` version used when this project was crafter ;
+* `node` version >= 15.0.1 & `npm` >= 7.20.6. If you have `nvm` installed, run `nvm use` to use the same `node` and `npm` version used when this project was crafted ;
 * An [Alchemy](https://www.alchemy.com/) account & project
 * An [Infura](https://infura.io) account & project
 ## Setup
